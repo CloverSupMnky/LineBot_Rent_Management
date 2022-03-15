@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/GetPersonSelectList',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/GetPersonSelectList',
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
         success: function (response) {
@@ -44,7 +44,7 @@ function InsertPersonalLiabilityFee() {
 
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/InsertPersonalLiabilityFee',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/InsertPersonalLiabilityFee',
         data: dataVal,
         contentType: "application/json; charset=utf-8",
         success: function (response) {
