@@ -1,6 +1,3 @@
-import { endPoint } from "../Constant/Constant";
-
-console.log(endPoint)
 // ready
 $(document).ready(function () {
 
