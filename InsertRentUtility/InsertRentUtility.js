@@ -4,7 +4,7 @@ $(document).ready(function () {
         location.href = '../RentDetail/RentDetail.html'
     })
 
-    $('#btn_add').click(InsertFixedFee)
+    $('#btn_add').click(InsertUtilityFee)
 
     $.ajax({
         type: "POST",
@@ -23,7 +23,7 @@ $(document).ready(function () {
 })
 
 // 新增固定租金費用
-function InsertFixedFee() {
+function InsertUtilityFee() {
     if (
         !$("#utility_selectList option:selected").val() ||
         !$("#utility_selectList option:selected").text() ||
