@@ -39,22 +39,15 @@
             <div class="col-12 pt-1">
                 <label for="list_func" class="form-label">租金管理</label>
                 <select class="form-select" id="list_func">
-                    <option value="Index.html" selected>查詢租金明細</option>
-                    <option value="">新增固定費用</option>
-                    <option value="">新增公共費用</option>
-                    <option value="">新增人員負債</option>
+                    <option value="" selected>===請選擇===</option>
+                    <option value="../InsertRentFixed/InsertRentFixed.html">新增固定費用</option>
+                    <option value="../InsertRentUtility/InsertRentUtility.html">新增公共費用</option>
+                    <option value="../InsertRentPersonalLiability/InsertRentPersonalLiability.html">新增人員負債</option>
                 </select>
             </div>
         </div>
     </div>
-    <script>
-        // ready
-        $(document).ready(function () {
-            $('#list_func').change(function () {
-                location.href = $(this).val();
-            })
-        })
-    </script>
+    <script type="text/javascript" src="./RentDetail.js"></script>
 </body>
 
 </html>
