@@ -1,7 +1,7 @@
 // ready
 $(document).ready(function () {
     $('#btn_back').click(function () {
-        location.href = '../RentDetail/RentDetail.html'
+        location.href = '../index.html'
     })
 
     $('#btn_add').click(InsertPersonalLiabilityFee)
@@ -48,7 +48,7 @@ function InsertPersonalLiabilityFee() {
         data: dataVal,
         contentType: "application/json; charset=utf-8",
         success: function (response) {
-            location.href = '../RentDetail/RentDetail.html'
+            location.href = '../index.html'
         }
     });
 }
