@@ -1,5 +1,9 @@
+import { endPoint } from "../Constant/Constant";
+
+console.log(endPoint)
 // ready
 $(document).ready(function () {
+
     $('#list_func').change(function () {
         location.href = $(this).val();
     })
@@ -32,15 +36,13 @@ $(document).ready(function () {
 
 // 刪除費用
 function removeItem() {
-    console.log(`type : ${$(this).data("type")}`)
-    console.log(`seqNo : ${$(this).data("seqno")}`)
-    // $.ajax({
-    //     type: "POST",
-    //     url: endpoint + '/LiffWeb/DeleteRentFixed',
-    //     data: JSON.stringify({ SeqNo: $(this).data("seqno") }),
-    //     contentType: "application/json; charset=utf-8",
-    //     success: function (response) {
-    //         window.location.reload();
-    //     }
-    // });
+    $.ajax({
+        type: "POST",
+        url: 'https://localhost:44370/api/RentalManagement/DeleteRentItem',
+        data: JSON.stringify({ Type: $(this).data("type"), SeqNo: $(this).data("seqno") }),
+        contentType: "application/json; charset=utf-8",
+        success: function (response) {
+            window.location.reload();
+        }
+    });
 }
