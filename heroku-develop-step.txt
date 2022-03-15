@@ -1,0 +1,6 @@
+1. 使用 heroku 指令 heroku login
+2. 使用 heroku 指令 heroku apps:create 網站名稱
+3. 設定 heroku 頁面(對應網站名稱) -> setting 頁籤 -> 下方 Buildpacks 新增 heroku/php
+4. 專案根目錄新增 composer.json 、 index.php 檔案
+5. 完成 git 推送流程， git add . 、 git commit -m "佈署 keroku 需求檔案新增" 、 git push origin master
+6. 推送到 heroku ， git push heroku master
