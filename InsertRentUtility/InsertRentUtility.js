@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/GetUtilitySelectList',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/GetUtilitySelectList',
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
         success: function (response) {
@@ -39,7 +39,7 @@ function InsertUtilityFee() {
 
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/InsertUtilityFee',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/InsertUtilityFee',
         data: dataVal,
         contentType: "application/json; charset=utf-8",
         success: function (response) {

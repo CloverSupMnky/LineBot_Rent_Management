@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/GetRentDetail',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/GetRentDetail',
         data: "",
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
@@ -35,7 +35,7 @@ $(document).ready(function () {
 function removeItem() {
     $.ajax({
         type: "POST",
-        url: 'https://localhost:44370/api/RentalManagement/DeleteRentItem',
+        url: 'https://linebotrentapi.herokuapp.com/api/RentalManagement/DeleteRentItem',
         data: JSON.stringify({ Type: $(this).data("type"), SeqNo: $(this).data("seqno") }),
         contentType: "application/json; charset=utf-8",
         success: function (response) {
